@@ -17,7 +17,7 @@ namespace JosueSosa._2024.PruebaTecnica.EN
         public string? Nombre { get; set; }
 
         [Required(ErrorMessage = "El precio es obligatorio.")]
-        [Range(0.01, double.MaxValue, ErrorMessage = "El precio debe ser mayor a 0.")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "El precio no puede ser negativo.")]
         public decimal? Precio { get; set;}
 
         [Required(ErrorMessage = "La categoría es obligatoria.")]
